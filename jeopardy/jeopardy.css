@@ -1,0 +1,32 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+
+.table {
+margin: 5rem auto;
+}
+
+.column-th {
+  width: 120px;
+  height: 70px;
+  background: green;
+}
+
+.cell {
+  width: 120px;
+  height: 100px;
+  background: green;
+  cursor: pointer;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.cell:hover {
+  background:#115ff4;
+  color: white;
+}
