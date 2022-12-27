@@ -1,32 +1,94 @@
-/* some colors you may find useful:
-  #115ff4
-  #060ce9
-  #28a200
-  #8d2ab5
-  #74119c
-*/
 
 
-.table {
-margin: 5rem auto;
+
+body {
+  font-family: 'Copse', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
 }
 
-.column-th {
-  width: 120px;
-  height: 70px;
-  background: green;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
 }
 
-.cell {
-  width: 120px;
-  height: 100px;
-  background: green;
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: #333;
+  font-size: 1em;
+  padding: 10px 20px;
   cursor: pointer;
-  text-align: center;
-  font-size: 2rem;
+  transition: background-color 0.2s;
 }
 
-.cell:hover {
-  background:#115ff4;
-  color: white;
+button:hover {
+  background-color: #f2f2f2;
+}
+
+#spin-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#spin-container i {
+  font-size: 3em;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #333;
+  color: #fff;
+}
+
+thead td {
+  font-size: 1.2em;
+  padding: 10px;
+  text-align: center;
+}
+
+tbody td {
+  font-size: 1.2em;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+tbody td.question {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+tbody td.question:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+tbody td.question-shown {
+  background-color: #fff;
+  color: #333;
+  cursor: default;
+}
+
+tbody td.answer-shown {
+  background-color: #333;
+  color: #fff;
+  cursor: default;
 }
